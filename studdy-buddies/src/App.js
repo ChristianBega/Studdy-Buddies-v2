@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 // Import in pages as needed
 import HomePage from "./pages/HomePage";
