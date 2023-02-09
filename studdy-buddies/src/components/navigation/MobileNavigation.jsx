@@ -5,7 +5,7 @@ export default function Form() {
     <nav>
       {/* Path needs to pass the "user name" of the current user to fetch user data. */}
       {/* "/:username/profile" */}
-      <Link to="/userprofile">
+      <Link to="/user-profile">
         <button>User Icon</button>
       </Link>
       <Link to="/dashboard">
