@@ -1,12 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
-// console.log(location.pathname);
 export default function Form() {
   let location = useLocation();
 
   return (
-    // {location=== "/" ? location.pathname : location.pathname}
     <>
-      {location.pathname === "/" || location.pathname === "/form-page" ? null : (
+      {location.pathname === "/" || location.pathname === "/form-page/sign-up" || location.pathname === "/form-page/login" ? null : (
         <nav>
           {/* Path needs to pass the "user name" of the current user to fetch user data. */}
           {/* "/:username/profile" */}

@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 
-export default function Form() {
+export default function SignUpForm() {
   return (
     <>
       <form>
         {/* Form Inputs below */}
+        <input type="email" placeholder="Enter email here..." />
+        <input type="text" placeholder="Enter username here..." />
+        <input type="password" placeholder="Enter password here..." />
         <Link to="/dashboard">
           <button>Sign Up</button>
         </Link>
