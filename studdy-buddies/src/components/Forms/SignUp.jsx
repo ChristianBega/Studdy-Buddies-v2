@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 //  useFormControlUnstyledContext, FormControlUnstyled
+import ParticlesBackground from "../../components/Particles/ParticlesBackground";
+
 import { InputUnstyled, ButtonUnstyled } from "@mui/base";
 export default function SignUpForm() {
   return (
     <section>
+      <ParticlesBackground />;
       <form className="form">
         <h1 style={{ textAlign: "center" }}>
           Welcome to <span style={{ display: "block", fontSize: "85%" }}>Study Buddies</span>

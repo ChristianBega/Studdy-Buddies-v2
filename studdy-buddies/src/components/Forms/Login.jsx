@@ -2,11 +2,13 @@ import { Link } from "react-router-dom";
 // useFormControlUnstyledContext, FormControlUnstyled
 import { InputUnstyled, ButtonUnstyled } from "@mui/base";
 // Mui useFormControlUnstyledContext - https://mui.com/base/react-form-control/
+import ParticlesBackground from "../../components/Particles/ParticlesBackground";
 import "../../Styles/Form.css";
 import "../../Styles/FormPage.css";
 export default function LoginForm() {
   return (
     <section>
+      <ParticlesBackground />;
       <form className="form">
         <h1 style={{ textAlign: "center" }}>
           Welcome back <span style={{ display: "block", fontSize: "85%" }}>"User name"</span>

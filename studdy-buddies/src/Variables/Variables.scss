@@ -27,12 +27,14 @@ $inputField-grey: #a6afb44d;
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem 1rem;
-  background: rgba(254, 253, 255, 0.26);
+  background: rgba(255, 254, 254, 0.3);
+  // background: rgba(167, 198, 241, 0.3);
+
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3.3px);
   -webkit-backdrop-filter: blur(3.3px);
-  border: 1px solid rgba(254, 253, 255, 0.5);
+  border: 1px solid rgba(254, 253, 255, 0.3);
 }
 
 @mixin inputField {
@@ -66,7 +68,6 @@ $inputField-grey: #a6afb44d;
 @mixin section {
   min-height: 100vh;
   min-width: 100vw;
-  background-color: #14121f;
   display: flex;
   align-items: center;
 }
