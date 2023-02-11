@@ -1,13 +1,18 @@
 import { Link } from "react-router-dom";
-import { InputUnstyled, ButtonUnstyled, useFormControlUnstyledContext, FormControlUnstyled } from "@mui/base";
+//  useFormControlUnstyledContext, FormControlUnstyled
+import { InputUnstyled, ButtonUnstyled } from "@mui/base";
 export default function SignUpForm() {
   return (
-    <>
+    <section>
       <form className="form">
-        {/* Form Inputs below */}
-        <InputUnstyled className="textFields" type="email" placeholder="Enter email here..." />
-        <InputUnstyled className="textFields" type="text" placeholder="Enter username here..." />
-        <InputUnstyled className="textFields" type="password" placeholder="Enter password here..." />
+        <h1 style={{ textAlign: "center" }}>
+          Welcome back to <span style={{ display: "block" }}>Study Buddies</span>
+        </h1>
+        <div className="inputContainers">
+          <InputUnstyled className="textFields" type="email" placeholder="Enter email here..." />
+          <InputUnstyled className="textFields" type="text" placeholder="Enter username here..." />
+          <InputUnstyled className="textFields" type="password" placeholder="Enter password here..." />
+        </div>
         <Link to="/dashboard">
           <ButtonUnstyled className="btn">Sign Up</ButtonUnstyled>
         </Link>
@@ -15,6 +20,6 @@ export default function SignUpForm() {
           <p className="">Already have an account? Log in here!</p>
         </Link>
       </form>
-    </>
+    </section>
   );
 }

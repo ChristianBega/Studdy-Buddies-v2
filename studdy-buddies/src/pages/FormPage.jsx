@@ -1,5 +1,4 @@
 import { useLocation } from "react-router-dom";
-
 import LoginForm from "../components/Forms/Login";
 import SignUpForm from "../components/Forms/SignUp";
 

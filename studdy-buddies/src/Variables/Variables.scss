@@ -16,9 +16,12 @@ $inputField-grey: #a6afb44d;
 //
 
 // Form mixins
+
+// Mobile first - will look horrible on desktop
 @mixin form {
   background-color: $primary-grey;
-  width: 100%;
+  min-width: 100vw;
+  min-height: 90vh;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -38,6 +41,11 @@ $inputField-grey: #a6afb44d;
   border-radius: 4px;
   padding: 1.6rem 0.8rem;
 }
+@mixin inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 @mixin button {
   margin-left: 0.5rem;
   padding: 0.5rem 1.5rem;
@@ -49,4 +57,12 @@ $inputField-grey: #a6afb44d;
     background-color: $accent-blue;
     transform: scale(1.1);
   }
+}
+
+@mixin section {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: red; // del later
+  display: flex;
+  align-items: center;
 }

@@ -9,6 +9,9 @@ body {
   .textFields input {
     @include inputField;
   }
+  .inputContainers {
+    @include inputContainer;
+  }
   .btn {
     @include button;
   }
