@@ -1,0 +1,27 @@
+@import "../Variables/Variables.scss";
+
+body {
+  font-family: $text-font;
+}
+h1 {
+  font-family: $header-font;
+  font-size: 45px;
+  color: $primary-grey;
+}
+a {
+  color: $primary-grey;
+  @include onHover();
+}
+.form {
+  @include form;
+
+  .textFields input {
+    @include inputField;
+  }
+  .inputContainers {
+    @include inputContainer;
+  }
+  .btn {
+    @include button;
+  }
+}

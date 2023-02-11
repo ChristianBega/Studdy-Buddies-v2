@@ -1,0 +1,70 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 45px;
+  color: #dcdcdc;
+}
+
+a {
+  color: #dcdcdc;
+}
+a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: #a7c6f1;
+}
+
+.form {
+  margin-inline: 2rem;
+  width: 100vw;
+  min-height: 90vh;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem 1rem;
+  background: rgba(255, 254, 254, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgb(0, 0, 0);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  border: 1px solid rgba(254, 253, 255, 0.3);
+}
+.form .textFields input {
+  background-color: rgba(166, 175, 180, 0.3019607843);
+  color: #ffffff;
+  min-width: 350px;
+  max-width: 80%;
+  height: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 1.6rem 0.8rem;
+}
+.form .textFields input::-moz-placeholder {
+  color: #ffffff;
+}
+.form .textFields input::placeholder {
+  color: #ffffff;
+}
+.form .inputContainers {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.form .btn {
+  margin-left: 0.5rem;
+  padding: 1rem 3.5rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+.form .btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: #a7c6f1;
+}/*# sourceMappingURL=Form.css.map */

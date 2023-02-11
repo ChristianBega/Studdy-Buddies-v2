@@ -1,4 +1,4 @@
-import StartNowBtn from "../components/Buttons/ctaButton";
+import StartNowBtn from "../components/Buttons/StartNowCTA";
 export default function HomePage() {
   return (
     <>
