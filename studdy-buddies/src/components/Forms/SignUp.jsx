@@ -1,23 +1,20 @@
 import { Link } from "react-router-dom";
-
+import { InputUnstyled, ButtonUnstyled, useFormControlUnstyledContext, FormControlUnstyled } from "@mui/base";
 export default function SignUpForm() {
   return (
     <>
-      <form>
+      <form className="form">
         {/* Form Inputs below */}
-        <input type="email" placeholder="Enter email here..." />
-        <input type="text" placeholder="Enter username here..." />
-        <input type="password" placeholder="Enter password here..." />
+        <InputUnstyled className="textFields" type="email" placeholder="Enter email here..." />
+        <InputUnstyled className="textFields" type="text" placeholder="Enter username here..." />
+        <InputUnstyled className="textFields" type="password" placeholder="Enter password here..." />
         <Link to="/dashboard">
-          <button>Sign Up</button>
+          <ButtonUnstyled className="btn">Sign Up</ButtonUnstyled>
         </Link>
         <Link to="/form-page/login">
-          <button>Already have an account? Log in here!</button>
+          <p className="">Already have an account? Log in here!</p>
         </Link>
       </form>
-
-      {/* Sign up */}
-      {/* Login */}
     </>
   );
 }

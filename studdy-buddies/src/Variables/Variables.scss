@@ -1,0 +1,52 @@
+// Typography & Sizes
+$text-font: "Montserrat", sans-serif;
+// Colors
+$primary-light: #ffffff;
+$primary-grey: #dcdcdc;
+
+$secondary-dark: #14121f;
+
+$accent-mint: #abebb9;
+$accent-blue: #a7c6f1;
+$accent-orange: #f7c6a1;
+$inputField-grey: #a6afb44d;
+
+// Spacing
+
+//
+
+// Form mixins
+@mixin form {
+  background-color: $primary-grey;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+@mixin inputField {
+  background-color: $inputField-grey;
+  color: $primary-light;
+  min-width: 350px;
+  max-width: 80%;
+  height: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 1.6rem 0.8rem;
+}
+@mixin button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  &:hover {
+    cursor: pointer;
+    background-color: $accent-blue;
+    transform: scale(1.1);
+  }
+}

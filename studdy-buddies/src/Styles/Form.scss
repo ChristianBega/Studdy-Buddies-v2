@@ -1,0 +1,15 @@
+@import "../Variables/Variables.scss";
+
+body {
+  font-family: $text-font;
+}
+.form {
+  @include form;
+
+  .textFields input {
+    @include inputField;
+  }
+  .btn {
+    @include button;
+  }
+}
