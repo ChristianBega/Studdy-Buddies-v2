@@ -6,7 +6,7 @@ export default function SignUpForm() {
     <section>
       <form className="form">
         <h1 style={{ textAlign: "center" }}>
-          Welcome back to <span style={{ display: "block" }}>Study Buddies</span>
+          Welcome to <span style={{ display: "block", fontSize: "85%" }}>Study Buddies</span>
         </h1>
         <div className="inputContainers">
           <InputUnstyled className="textFields" type="email" placeholder="Enter email here..." />
@@ -17,7 +17,9 @@ export default function SignUpForm() {
           <ButtonUnstyled className="btn">Sign Up</ButtonUnstyled>
         </Link>
         <Link to="/form-page/login">
-          <p className="">Already have an account? Log in here!</p>
+          <p className="">
+            Already have an account? <span style={{ display: "block", textAlign: "center" }}>Log in here!</span>
+          </p>
         </Link>
       </form>
     </section>

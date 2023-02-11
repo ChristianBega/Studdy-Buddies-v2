@@ -1,4 +1,5 @@
 // Typography & Sizes
+$header-font: "Source Sans Pro", sans-serif;
 $text-font: "Montserrat", sans-serif;
 // Colors
 $primary-light: #ffffff;
@@ -13,14 +14,12 @@ $inputField-grey: #a6afb44d;
 
 // Spacing
 
-//
-
 // Form mixins
 
 // Mobile first - will look horrible on desktop
 @mixin form {
-  background-color: $primary-grey;
-  min-width: 100vw;
+  margin-inline: 2rem;
+  width: 100vw;
   min-height: 90vh;
   display: flex;
   gap: 2rem;
@@ -28,6 +27,12 @@ $inputField-grey: #a6afb44d;
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem 1rem;
+  background: rgba(254, 253, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  border: 1px solid rgba(254, 253, 255, 0.5);
 }
 
 @mixin inputField {
@@ -40,6 +45,9 @@ $inputField-grey: #a6afb44d;
   border: none;
   border-radius: 4px;
   padding: 1.6rem 0.8rem;
+  &::placeholder {
+    color: $primary-light;
+  }
 }
 @mixin inputContainer {
   display: flex;
@@ -48,21 +56,25 @@ $inputField-grey: #a6afb44d;
 }
 @mixin button {
   margin-left: 0.5rem;
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 3.5rem;
   outline: none;
   border: none;
   border-radius: 8px;
-  &:hover {
-    cursor: pointer;
-    background-color: $accent-blue;
-    transform: scale(1.1);
-  }
+  @include onHover();
 }
 
 @mixin section {
   min-height: 100vh;
   min-width: 100vw;
-  background-color: red; // del later
+  background-color: #14121f;
   display: flex;
   align-items: center;
+}
+
+@mixin onHover {
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: $accent-blue;
+  }
 }
