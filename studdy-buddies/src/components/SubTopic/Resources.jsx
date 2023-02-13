@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Resources() {
   return (
-    <div className="subtopicBox">
+    <div className="subtopicBox subtopicResources">
       {/* <label for="resources">Resources</label>
        */}
       <h3>Resources</h3>

@@ -3,21 +3,41 @@
 .subtopicSection {
   @include subtopicSection;
   gap: 2rem;
+  color: $primary-light;
 
   .subtopicBox {
-    // background-color: red;
     @include subtopicBox;
   }
   :nth-child(1) {
     text-align: center;
-    margin-top: 1rem;
+    margin-block: 1rem;
   }
   .subtopicCodeDemo {
-    // background-color: green;
     min-height: 200px;
   }
   .subtopicGist {
-    // background-color: orange;
     min-height: 400px;
+    // Heading 3
+    :nth-child(1) {
+      margin-bottom: 1rem;
+      // padding: 1rem;
+    }
+    // Title
+    :nth-child(2) {
+      padding: 0.5rem 1rem;
+      min-height: 85px;
+    }
+    // Description
+    :nth-child(3) {
+      color: $secondary-dark;
+      padding: 1rem;
+      background-color: $primary-grey;
+      display: block;
+      min-height: 200px;
+    }
+  }
+  .subtopicResources {
+    display: flex;
+    justify-content: space-between;
   }
 }

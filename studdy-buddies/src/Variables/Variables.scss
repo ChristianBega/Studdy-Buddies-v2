@@ -5,7 +5,7 @@ $text-font: "Montserrat", sans-serif;
 $primary-light: #ffffff;
 $primary-grey: #dcdcdc;
 
-$secondary-dark: #14121f;
+$secondary-dark: rgba(20, 18, 31, 0.8);
 
 $accent-mint: #abebb9;
 $accent-blue: #a7c6f1;
@@ -13,9 +13,7 @@ $accent-orange: #f7c6a1;
 $inputField-grey: #a6afb44d;
 
 // Spacing
-
 // Form mixins
-
 // Mobile first - will look horrible on desktop
 @mixin form {
   margin-inline: 2rem;
@@ -77,6 +75,134 @@ $inputField-grey: #a6afb44d;
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Christian start 200 -
 
 @mixin subtopicSection {
@@ -89,7 +215,11 @@ $inputField-grey: #a6afb44d;
 }
 @mixin subtopicBox {
   padding: 1rem;
-  min-height: 100px;
+  min-height: 50px;
   width: 100%;
-  border: 1px solid red;
+  background-color: $secondary-dark;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
 }
