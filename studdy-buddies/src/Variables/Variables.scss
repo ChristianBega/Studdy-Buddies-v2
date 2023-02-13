@@ -51,11 +51,13 @@ $inputField-grey: #a6afb44d;
     color: $primary-light;
   }
 }
+
 @mixin inputContainer {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
+
 @mixin button {
   margin-left: 0.5rem;
   padding: 1rem 3.5rem;
@@ -78,4 +80,244 @@ $inputField-grey: #a6afb44d;
     transform: scale(1.1);
     color: $accent-blue;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Dashboard Mixins
+@mixin PageContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@mixin QuoteBox {
+  padding: 10px;
+  line-height: 1.5;
+  text-align: center;
+  width: 90vw;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: $accent-blue;
+  font-family: $text-font;
+}
+
+@mixin CalendarBox {
+  background-color: $accent-mint;
+  border-radius: 10px;
 }

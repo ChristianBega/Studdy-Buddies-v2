@@ -1,0 +1,17 @@
+@import "../Variables/Variables.scss";
+
+body {
+    background-color: $primary-grey
+}
+
+.pageContainer {
+    @include PageContainer;
+
+    .quoteContainer {
+        @include QuoteBox
+    }
+    
+    .calendarContainer {
+        @include CalendarBox;
+    }
+}

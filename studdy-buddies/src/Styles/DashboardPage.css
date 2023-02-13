@@ -1,0 +1,27 @@
+body {
+  background-color: #dcdcdc;
+}
+
+.pageContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pageContainer .quoteContainer {
+  padding: 10px;
+  line-height: 1.5;
+  text-align: center;
+  width: 90vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: #a7c6f1;
+  font-family: "Montserrat", sans-serif;
+}
+.pageContainer .calendarContainer {
+  background-color: #abebb9;
+  border-radius: 10px;
+}/*# sourceMappingURL=DashboardPage.css.map */

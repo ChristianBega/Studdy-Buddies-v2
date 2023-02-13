@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
+import QuoteContainer from "../components/DashBoard/Quote";
+import Calendar from "../components/DashBoard/Calendar";
 
 export default function DashboardPage() {
   return (
     <>
-      <h1>Dashboard Page</h1>
       {/* Path needs to pass the "topic name" of the current card to fetch user data on that topic. */}
       {/* "/:topicname/topicpage" */}
-      <Link to="/topic-page">Topic Card</Link>
+      <div className="pageContainer">
+      <QuoteContainer />
+      <Calendar />
+      </div>
     </>
   );
 }

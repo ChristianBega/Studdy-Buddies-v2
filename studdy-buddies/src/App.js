@@ -18,6 +18,7 @@ export default function App() {
   return (
     <>
       <Router>
+        <MobileNavigation />
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/form-page/sign-up" element={<SignUpForm />}></Route>
@@ -29,7 +30,6 @@ export default function App() {
         </Routes>
         {/* Trying to conditionally render navigation only when on routes that aren't : "/" or "/form-page" */}
         {/* {!Route.path === "/" || !Route.path === "/form-page" ?  <MobileNavigation />} : null */}
-        <MobileNavigation />
       </Router>
     </>
   );
