@@ -1,0 +1,24 @@
+.subtopicSection {
+  padding: 2rem 1.2rem;
+  min-height: 95vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.subtopicSection .subtopicBox {
+  padding: 1rem;
+  min-height: 100px;
+  width: 100%;
+  border: 1px solid red;
+}
+.subtopicSection :nth-child(1) {
+  text-align: center;
+  margin-top: 1rem;
+}
+.subtopicSection .subtopicCodeDemo {
+  min-height: 200px;
+}
+.subtopicSection .subtopicGist {
+  min-height: 400px;
+}/*# sourceMappingURL=SubtopicPage.css.map */

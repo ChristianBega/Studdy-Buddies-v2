@@ -19,7 +19,7 @@ $inputField-grey: #a6afb44d;
 // Mobile first - will look horrible on desktop
 @mixin form {
   margin-inline: 2rem;
-  width: 100vw;
+  width: 100%;
   min-height: 90vh;
   display: flex;
   gap: 2rem;
@@ -36,7 +36,6 @@ $inputField-grey: #a6afb44d;
   -webkit-backdrop-filter: blur(3.3px);
   border: 1px solid rgba(254, 253, 255, 0.3);
 }
-
 @mixin inputField {
   background-color: $inputField-grey;
   color: $primary-light;
@@ -64,18 +63,33 @@ $inputField-grey: #a6afb44d;
   border-radius: 8px;
   @include onHover();
 }
-
-@mixin section {
+@mixin formSection {
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
   align-items: center;
 }
-
 @mixin onHover {
   &:hover {
     cursor: pointer;
     transform: scale(1.1);
     color: $accent-blue;
   }
+}
+
+// Christian start 200 -
+
+@mixin subtopicSection {
+  padding: 2rem 1.2rem;
+  min-height: 95vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+}
+@mixin subtopicBox {
+  padding: 1rem;
+  min-height: 100px;
+  width: 100%;
+  border: 1px solid red;
 }

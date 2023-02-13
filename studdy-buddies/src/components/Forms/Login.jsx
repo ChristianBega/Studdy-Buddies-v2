@@ -7,7 +7,7 @@ import "../../Styles/Form.css";
 import "../../Styles/FormPage.css";
 export default function LoginForm() {
   return (
-    <section>
+    <section className="formSection">
       <ParticlesBackground />;
       <form className="form">
         <h1 style={{ textAlign: "center" }}>
