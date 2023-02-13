@@ -9,7 +9,7 @@ $secondary-dark: #14121f;
 
 $accent-mint: #abebb9;
 $accent-blue: #a7c6f1;
-$accent-orange: #f7c6a1;
+$accent-orange: #e8b996;
 $inputField-grey: #a6afb44d;
 
 // Spacing
@@ -299,7 +299,7 @@ $inputField-grey: #a6afb44d;
 
 // Dashboard Mixins
 @mixin PageContainer {
-  height: 100vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -320,4 +320,35 @@ $inputField-grey: #a6afb44d;
 @mixin CalendarBox {
   background-color: $accent-mint;
   border-radius: 10px;
+  width: 90vw;
+}
+
+@mixin CardBox {
+  padding: 20px;
+  text-align: center;
+  width: 90vw;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: $primary-light;
+  font-family: $text-font;
+  color: #0d0d0d;
+}
+
+@mixin OuterBox {
+  background-color: $primary-light;
+  font-family: $text-font;
+  color: #0d0d0d;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+@mixin TopicBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $accent-orange;
+  height: 130px;
+  border-radius: 8px;
+  border-bottom: 2px solid black;
 }

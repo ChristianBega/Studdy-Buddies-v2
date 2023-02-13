@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import QuoteContainer from "../components/DashBoard/Quote";
 import Calendar from "../components/DashBoard/Calendar";
+import Card from "../components/DashBoard/Card";
 
 export default function DashboardPage() {
   return (
@@ -10,6 +11,7 @@ export default function DashboardPage() {
       <div className="pageContainer">
       <QuoteContainer />
       <Calendar />
+      <Card />
       </div>
     </>
   );

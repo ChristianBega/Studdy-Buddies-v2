@@ -12,6 +12,25 @@ body {
     }
     
     .calendarContainer {
-        @include CalendarBox;
+        @include CalendarBox
+    }
+
+    .topicContainer {
+        @include CardBox
+    }
+
+        .outerContainer {
+        @include OuterBox
+    }
+
+    .innerContainer {
+        @include TopicBox;
+
+        a {
+            font-family: $text-font;
+            text-decoration: none;
+            color: #0d0d0d;
+            font-size: 200%;
+        }
     }
 }
