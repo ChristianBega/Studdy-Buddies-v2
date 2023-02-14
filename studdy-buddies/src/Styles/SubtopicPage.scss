@@ -3,24 +3,27 @@
 .subtopicSection {
   @include subtopicSection;
   gap: 2rem;
-  color: $primary-light;
+  // color: $primary-light;
+  color: #000;
 
-  .subtopicBox {
-    @include subtopicBox;
-  }
   :nth-child(1) {
     text-align: center;
     margin-block: 1rem;
   }
+  .subtopicBox {
+    @include subtopicBox;
+  }
+  .subtopicDescription {
+    Button {
+      @include modalButton;
+    }
+  }
+
   .subtopicCodeDemo {
     min-height: 200px;
     position: relative;
-    // Add button
-    :nth-child(2) {
-      background-color: red;
-      position: absolute;
-      top: 2.1rem;
-      right: 2rem;
+    Button {
+      @include modalButton;
     }
   }
   .subtopicGist {
@@ -32,14 +35,11 @@
       margin-bottom: 1rem;
       // padding: 1rem;
     }
-    // Add button
-    :nth-child(2) {
-      background-color: red;
-      position: absolute;
-      top: 2.1rem;
-      right: 2rem;
+    Button {
+      @include modalButton;
     }
-    // Title 
+
+    // Title
     :nth-child(3) {
       padding: 0.5rem 1rem;
       min-height: 85px;
@@ -55,6 +55,12 @@
   }
   .subtopicResources {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    // justify-content: space-between;
+    // background-color: red;
+    :nth-child(2) {
+      // background-color: red;
+      min-width: 180px;
+    }
   }
 }

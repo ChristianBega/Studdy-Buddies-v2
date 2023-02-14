@@ -28,3 +28,9 @@ a {
     @include button;
   }
 }
+
+.modalForm {
+  .textFields input {
+    @include inputField;
+  }
+}

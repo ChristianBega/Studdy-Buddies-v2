@@ -48,9 +48,6 @@ a:hover {
 .form .textFields input::-moz-placeholder {
   color: #ffffff;
 }
-.form .textFields input:-ms-input-placeholder {
-  color: #ffffff;
-}
 .form .textFields input::placeholder {
   color: #ffffff;
 }
@@ -70,4 +67,22 @@ a:hover {
   cursor: pointer;
   transform: scale(1.1);
   color: #a7c6f1;
+}
+
+.modalForm .textFields input {
+  background-color: rgba(166, 175, 180, 0.3019607843);
+  color: #ffffff;
+  min-width: 350px;
+  max-width: 80%;
+  height: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 1.6rem 0.8rem;
+}
+.modalForm .textFields input::-moz-placeholder {
+  color: #ffffff;
+}
+.modalForm .textFields input::placeholder {
+  color: #ffffff;
 }/*# sourceMappingURL=Form.css.map */
