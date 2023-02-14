@@ -23,18 +23,32 @@
 }
 .subtopicSection .subtopicCodeDemo {
   min-height: 200px;
+  position: relative;
+}
+.subtopicSection .subtopicCodeDemo :nth-child(2) {
+  background-color: red;
+  position: absolute;
+  top: 2.1rem;
+  right: 2rem;
 }
 .subtopicSection .subtopicGist {
   min-height: 400px;
+  position: relative;
 }
 .subtopicSection .subtopicGist :nth-child(1) {
   margin-bottom: 1rem;
 }
 .subtopicSection .subtopicGist :nth-child(2) {
+  background-color: red;
+  position: absolute;
+  top: 2.1rem;
+  right: 2rem;
+}
+.subtopicSection .subtopicGist :nth-child(3) {
   padding: 0.5rem 1rem;
   min-height: 85px;
 }
-.subtopicSection .subtopicGist :nth-child(3) {
+.subtopicSection .subtopicGist :nth-child(4) {
   color: rgba(20, 18, 31, 0.8);
   padding: 1rem;
   background-color: #dcdcdc;
