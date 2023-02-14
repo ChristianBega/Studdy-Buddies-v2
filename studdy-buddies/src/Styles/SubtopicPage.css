@@ -1,0 +1,61 @@
+.subtopicSection {
+  padding: 2rem 1.2rem;
+  min-height: 95vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #ffffff;
+}
+.subtopicSection .subtopicBox {
+  padding: 1rem;
+  min-height: 50px;
+  width: 100%;
+  background-color: rgba(20, 18, 31, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+}
+.subtopicSection :nth-child(1) {
+  text-align: center;
+  margin-block: 1rem;
+}
+.subtopicSection .subtopicCodeDemo {
+  min-height: 200px;
+  position: relative;
+}
+.subtopicSection .subtopicCodeDemo :nth-child(2) {
+  background-color: red;
+  position: absolute;
+  top: 2.1rem;
+  right: 2rem;
+}
+.subtopicSection .subtopicGist {
+  min-height: 400px;
+  position: relative;
+}
+.subtopicSection .subtopicGist :nth-child(1) {
+  margin-bottom: 1rem;
+}
+.subtopicSection .subtopicGist :nth-child(2) {
+  background-color: red;
+  position: absolute;
+  top: 2.1rem;
+  right: 2rem;
+}
+.subtopicSection .subtopicGist :nth-child(3) {
+  padding: 0.5rem 1rem;
+  min-height: 85px;
+}
+.subtopicSection .subtopicGist :nth-child(4) {
+  color: rgba(20, 18, 31, 0.8);
+  padding: 1rem;
+  background-color: #dcdcdc;
+  display: block;
+  min-height: 200px;
+}
+.subtopicSection .subtopicResources {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=SubtopicPage.css.map */

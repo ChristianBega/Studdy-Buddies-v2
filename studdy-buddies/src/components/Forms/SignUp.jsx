@@ -5,7 +5,7 @@ import ParticlesBackground from "../../components/Particles/ParticlesBackground"
 import { InputUnstyled, ButtonUnstyled } from "@mui/base";
 export default function SignUpForm() {
   return (
-    <section>
+    <section className="formSection">
       <ParticlesBackground />;
       <form className="form">
         <h1 style={{ textAlign: "center" }}>

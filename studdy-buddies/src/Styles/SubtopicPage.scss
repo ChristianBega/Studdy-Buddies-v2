@@ -1,0 +1,60 @@
+@import "../Variables/Variables.scss";
+
+.subtopicSection {
+  @include subtopicSection;
+  gap: 2rem;
+  color: $primary-light;
+
+  .subtopicBox {
+    @include subtopicBox;
+  }
+  :nth-child(1) {
+    text-align: center;
+    margin-block: 1rem;
+  }
+  .subtopicCodeDemo {
+    min-height: 200px;
+    position: relative;
+    // Add button
+    :nth-child(2) {
+      background-color: red;
+      position: absolute;
+      top: 2.1rem;
+      right: 2rem;
+    }
+  }
+  .subtopicGist {
+    min-height: 400px;
+    position: relative;
+
+    // Heading 3
+    :nth-child(1) {
+      margin-bottom: 1rem;
+      // padding: 1rem;
+    }
+    // Add button
+    :nth-child(2) {
+      background-color: red;
+      position: absolute;
+      top: 2.1rem;
+      right: 2rem;
+    }
+    // Title 
+    :nth-child(3) {
+      padding: 0.5rem 1rem;
+      min-height: 85px;
+    }
+    // Description
+    :nth-child(4) {
+      color: $secondary-dark;
+      padding: 1rem;
+      background-color: $primary-grey;
+      display: block;
+      min-height: 200px;
+    }
+  }
+  .subtopicResources {
+    display: flex;
+    justify-content: space-between;
+  }
+}

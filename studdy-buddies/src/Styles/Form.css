@@ -19,7 +19,7 @@ a:hover {
 
 .form {
   margin-inline: 2rem;
-  width: 100vw;
+  width: 100%;
   min-height: 90vh;
   display: flex;
   gap: 2rem;
