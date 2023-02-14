@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 {"version":3,"sources":["FormPage.scss","../Variables/Variables.scss","FormPage.css"],"names":[],"mappings":"AAEA;EC8DE,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;AC9DF","file":"FormPage.css"}
-=======
-{"version":3,"sources":["FormPage.scss","../Variables/Variables.scss","FormPage.css"],"names":[],"mappings":"AAEA;ECoEE,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;ACpEF","file":"FormPage.css"}
->>>>>>> main
