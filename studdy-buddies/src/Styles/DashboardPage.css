@@ -50,7 +50,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e8b996;
+  background-color: #f5d0a8;
   height: 130px;
   border-radius: 8px;
   border-bottom: 2px solid black;
@@ -60,4 +60,5 @@ body {
   text-decoration: none;
   color: #0d0d0d;
   font-size: 200%;
+  font-weight: bolder;
 }/*# sourceMappingURL=DashboardPage.css.map */
