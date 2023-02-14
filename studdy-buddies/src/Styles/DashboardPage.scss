@@ -1,0 +1,37 @@
+@import "../Variables/Variables.scss";
+
+body {
+    background-color: $primary-grey
+}
+
+.pageContainer {
+    @include PageContainer;
+
+    .quoteContainer {
+        @include QuoteBox
+    }
+    
+    .calendarContainer {
+        @include CalendarBox
+    }
+
+    .topicContainer {
+        @include CardBox
+    }
+
+        .outerContainer {
+        @include OuterBox
+    }
+
+    .innerContainer {
+        @include TopicBox;
+
+        a {
+            font-family: $text-font;
+            text-decoration: none;
+            color: #0d0d0d;
+            font-size: 200%;
+            font-weight: bolder;
+        }
+    }
+}
