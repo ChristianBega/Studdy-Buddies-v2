@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import AddIcon from "@mui/icons-material/Add";
-import { InputUnstyled } from "@mui/base";
+import SubtopicsForm from "../Forms/SubtopicsForm";
 // import "../../Styles/FormPage.css";
 const style = {
   position: "absolute",
@@ -22,11 +22,14 @@ export default function ModalComponent() {
   const [formType, setFormType] = React.useState("");
   const [open, setOpen] = React.useState(false);
   const handleOpen = (e) => {
-    console.log(e.target.parentElement.parentElement.id);
+    // console.log(e.target.parentElement.parentElement.id);
     setOpen(true);
     setFormType(e.target.parentElement.parentElement.id);
   };
-  const handleClose = () => setOpen(false);
+  const handleClose = () => {
+    setOpen(false);
+    setFormType("");
+  };
 
   return (
     <>
@@ -38,9 +41,7 @@ export default function ModalComponent() {
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Add Something here ...
           </Typography>
-          <form className="modalForm">
-            <InputUnstyled className="textFields" type="text" placeholder="Enter description here" />
-          </form>
+          <SubtopicsForm formType={formType} />
         </Box>
       </Modal>
     </>
