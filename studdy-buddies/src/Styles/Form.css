@@ -48,6 +48,9 @@ a:hover {
 .form .textFields input::-moz-placeholder {
   color: #ffffff;
 }
+.form .textFields input:-ms-input-placeholder {
+  color: #ffffff;
+}
 .form .textFields input::placeholder {
   color: #ffffff;
 }

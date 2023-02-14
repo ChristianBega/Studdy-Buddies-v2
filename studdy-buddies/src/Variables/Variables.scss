@@ -9,7 +9,7 @@ $secondary-dark: rgba(20, 18, 31, 0.8);
 
 $accent-mint: #abebb9;
 $accent-blue: #a7c6f1;
-$accent-orange: #f7c6a1;
+$accent-orange: #f5d0a8;
 $inputField-grey: #a6afb44d;
 
 // Spacing
@@ -48,11 +48,13 @@ $inputField-grey: #a6afb44d;
     color: $primary-light;
   }
 }
+
 @mixin inputContainer {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
+
 @mixin button {
   margin-left: 0.5rem;
   padding: 1rem 3.5rem;
@@ -203,6 +205,7 @@ $inputField-grey: #a6afb44d;
 
 
 
+<<<<<<< HEAD
 // Christian start 200 -
 
 @mixin subtopicSection {
@@ -223,3 +226,147 @@ $inputField-grey: #a6afb44d;
   backdrop-filter: blur(3.3px);
   -webkit-backdrop-filter: blur(3.3px);
 }
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Dashboard Mixins
+@mixin PageContainer {
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@mixin QuoteBox {
+  padding: 10px;
+  line-height: 1.5;
+  text-align: center;
+  width: 90vw;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: $accent-blue;
+  font-family: $text-font;
+}
+
+@mixin CalendarBox {
+  background-color: $accent-mint;
+  border-radius: 10px;
+  width: 90vw;
+}
+
+@mixin CardBox {
+  padding: 20px;
+  text-align: center;
+  width: 90vw;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: $primary-light;
+  font-family: $text-font;
+  color: #0d0d0d;
+}
+
+@mixin OuterBox {
+  background-color: $primary-light;
+  font-family: $text-font;
+  color: #0d0d0d;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+@mixin TopicBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $accent-orange;
+  height: 130px;
+  border-radius: 8px;
+  border-bottom: 2px solid black;
+}
+>>>>>>> main

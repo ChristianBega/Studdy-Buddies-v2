@@ -3,15 +3,18 @@
 body {
   font-family: $text-font;
 }
+
 h1 {
   font-family: $header-font;
   font-size: 45px;
   color: $primary-grey;
 }
+
 a {
   color: $primary-grey;
   @include onHover();
 }
+
 .form {
   @include form;
 
