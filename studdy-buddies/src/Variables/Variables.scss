@@ -1,6 +1,7 @@
 // Typography & Sizes
 $header-font: "Source Sans Pro", sans-serif;
 $text-font: "Montserrat", sans-serif;
+$font-color: #726e6e;
 // Colors
 $primary-light: #ffffff;
 $primary-grey: #dcdcdc;
@@ -225,6 +226,10 @@ $inputField-grey: #a6afb44d;
   backdrop-filter: blur(3.3px);
   -webkit-backdrop-filter: blur(3.3px);
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 
 @mixin modalButton {
       padding: 0;
@@ -331,20 +336,23 @@ $inputField-grey: #a6afb44d;
 }
 
 @mixin QuoteBox {
+  color: $font-color;
   padding: 10px;
   line-height: 1.5;
   text-align: center;
   width: 90vw;
   height: fit-content;
   border-radius: 10px;
-  background-color: $accent-blue;
+  background-color: $primary-light;
   font-family: $text-font;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
 }
 
 @mixin CalendarBox {
-  background-color: $accent-mint;
+  background-color: $primary-light;
   border-radius: 10px;
   width: 90vw;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
 }
 
 @mixin CardBox {
@@ -355,13 +363,14 @@ $inputField-grey: #a6afb44d;
   border-radius: 10px;
   background-color: $primary-light;
   font-family: $text-font;
-  color: #0d0d0d;
+  color: $font-color;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
 @mixin OuterBox {
   background-color: $primary-light;
   font-family: $text-font;
-  color: #0d0d0d;
+  color: $font-color;
   height: 200px;
   border: 2px solid black;
   border-radius: 10px;
@@ -371,8 +380,22 @@ $inputField-grey: #a6afb44d;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $accent-orange;
+  background-color: #E2D1F9;
   height: 130px;
   border-radius: 8px;
   border-bottom: 2px solid black;
 }
+<<<<<<< Updated upstream
+=======
+
+@mixin StandardButton {
+  width: 70px;
+  height: 30px;
+  font-family: $text-font;
+  font-size: 110%;
+  color: $font-color;
+  background-color: $accent-blue;
+  border: $accent-blue;
+  border-radius: 7px;
+}
+>>>>>>> Stashed changes

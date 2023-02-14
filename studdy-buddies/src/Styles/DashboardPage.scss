@@ -12,7 +12,7 @@ body {
     }
     
     .calendarContainer {
-        @include CalendarBox
+        @include CalendarBox;
     }
 
     .topicContainer {
@@ -29,9 +29,13 @@ body {
         a {
             font-family: $text-font;
             text-decoration: none;
-            color: #0d0d0d;
+            color: $font-color;
             font-size: 200%;
             font-weight: bolder;
         }
+    }
+
+    .standardButton {
+        @include StandardButton
     }
 }
