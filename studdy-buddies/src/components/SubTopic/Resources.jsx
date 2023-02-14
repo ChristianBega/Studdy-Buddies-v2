@@ -33,14 +33,14 @@ export default function Resources() {
   };
 
   return (
-    <div className="subtopicBox subtopicResources">
+    <div id="resources" className="subtopicBox subtopicResources">
       <h3>Resources</h3>
       <FormControl variant="standard">
         <InputLabel id="resource">{resource || "Resources"}</InputLabel>
         <Select labelId="resources" id="demo-simple-select-standard" onChange={handleChange}>
           {resourceMockData.map((resource) => (
             <MenuItem value={resource.resourceName}>
-              <a href={resource.resourceLink} target="_blank" rel="noopener noreferrer">
+              <a key={resource.resourceName} href={resource.resourceLink} target="_blank" rel="noopener noreferrer">
                 {resource.resourceName}
               </a>
             </MenuItem>

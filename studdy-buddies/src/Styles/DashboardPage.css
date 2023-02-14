@@ -14,7 +14,6 @@ body {
   line-height: 1.5;
   text-align: center;
   width: 90vw;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 10px;
@@ -30,7 +29,6 @@ body {
   padding: 20px;
   text-align: center;
   width: 90vw;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 10px;

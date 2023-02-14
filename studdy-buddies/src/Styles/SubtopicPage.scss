@@ -13,15 +13,17 @@
   .subtopicBox {
     @include subtopicBox;
   }
+  .subtopicDescription {
+    Button {
+      @include modalButton;
+    }
+  }
+
   .subtopicCodeDemo {
     min-height: 200px;
     position: relative;
-    // Add button
-    :nth-child(2) {
-      background-color: red;
-      position: absolute;
-      top: 2.1rem;
-      right: 2rem;
+    Button {
+      @include modalButton;
     }
   }
   .subtopicGist {
@@ -33,13 +35,10 @@
       margin-bottom: 1rem;
       // padding: 1rem;
     }
-    // Add button
-    :nth-child(2) {
-      background-color: red;
-      position: absolute;
-      top: 2.1rem;
-      right: 2rem;
+    Button {
+      @include modalButton;
     }
+
     // Title
     :nth-child(3) {
       padding: 0.5rem 1rem;

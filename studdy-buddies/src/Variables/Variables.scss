@@ -226,7 +226,16 @@ $inputField-grey: #a6afb44d;
   -webkit-backdrop-filter: blur(3.3px);
 }
 
-
+@mixin modalButton {
+      padding: 0;
+      margin: 0;
+      height: 2.5rem;
+      min-width: 2.5rem;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+}
 
 
 
