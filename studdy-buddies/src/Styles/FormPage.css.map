@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
-{"version":3,"sources":["FormPage.scss","../Variables/Variables.scss","FormPage.css"],"names":[],"mappings":"AAEA;ECgEE,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;AChEF","file":"FormPage.css"}
-=======
 {"version":3,"sources":["FormPage.scss","../Variables/Variables.scss","FormPage.css"],"names":[],"mappings":"AAEA;ECiEE,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;ACjEF","file":"FormPage.css"}
->>>>>>> Stashed changes

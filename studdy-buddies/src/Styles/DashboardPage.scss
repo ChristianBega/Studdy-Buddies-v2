@@ -16,26 +16,42 @@ body {
     }
 
     .topicContainer {
-        @include CardBox
-    }
+        @include CardBox;
+    
 
-        .outerContainer {
-        @include OuterBox
-    }
-
-    .innerContainer {
-        @include TopicBox;
-
-        a {
-            font-family: $text-font;
-            text-decoration: none;
-            color: $font-color;
-            font-size: 200%;
-            font-weight: bolder;
+            .outerContainer {
+                @include OuterBox
         }
-    }
 
-    .standardButton {
-        @include StandardButton
+        .innerContainer {
+            @include TopicBox;
+
+            a {
+                font-family: $text-font;
+                text-decoration: none;
+                color: $font-color;
+                font-size: 200%;
+                font-weight: bolder;
+            }
+        }
+
+        .standardButton {
+            @include StandardButton
+        }
+
+        .favoriteIcon {
+            font-size: 200%;
+            color: $font-color;
+        }
+
+        .arrowContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .arrow {
+            font-size: 50px;
+        }
     }
 }

@@ -15,6 +15,7 @@ body {
   line-height: 1.5;
   text-align: center;
   width: 90vw;
+  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 10px;
@@ -32,6 +33,7 @@ body {
   padding: 20px;
   text-align: center;
   width: 90vw;
+  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 10px;
@@ -40,31 +42,37 @@ body {
   color: #726e6e;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
-.pageContainer .outerContainer {
+.pageContainer .topicContainer .outerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50px;
+  margin-bottom: 10px;
   background-color: #ffffff;
   font-family: "Montserrat", sans-serif;
   color: #726e6e;
-  height: 200px;
-  border: 2px solid black;
-  border-radius: 10px;
+  background-color: #dcdcdc;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-.pageContainer .innerContainer {
+.pageContainer .topicContainer .innerContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #E2D1F9;
   height: 130px;
-  border-radius: 8px;
-  border-bottom: 2px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.pageContainer .innerContainer a {
+.pageContainer .topicContainer .innerContainer a {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #726e6e;
   font-size: 200%;
   font-weight: bolder;
 }
-.pageContainer .standardButton {
+.pageContainer .topicContainer .standardButton {
   width: 70px;
   height: 30px;
   font-family: "Montserrat", sans-serif;
@@ -73,4 +81,16 @@ body {
   background-color: #a7c6f1;
   border: #a7c6f1;
   border-radius: 7px;
+}
+.pageContainer .topicContainer .favoriteIcon {
+  font-size: 200%;
+  color: #726e6e;
+}
+.pageContainer .topicContainer .arrowContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pageContainer .topicContainer .arrow {
+  font-size: 50px;
 }/*# sourceMappingURL=DashboardPage.css.map */
