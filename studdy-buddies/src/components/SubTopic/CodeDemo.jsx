@@ -1,13 +1,19 @@
 import ModalComponent from "./Modal";
-import React from "react";
+import React, { useState } from "react";
 
 export default function CodeDemo() {
-  return (
-    <div id="codeDemo" className="subtopicBox subtopicCodeDemo">
-      <h3>Code Demo</h3>
-      <ModalComponent />
+  const [isHovered, setIsHovered] = useState(false);
 
-      <code>Enter your code example here...</code>
+  return (
+    <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} id="codeDemo" className="subtopicBox subtopicCodeDemo">
+      {isHovered ? (
+        <ModalComponent isHovered={isHovered} />
+      ) : (
+        <>
+          <h3>Code Demo</h3>
+          <code>Enter your code example here...</code>
+        </>
+      )}
     </div>
   );
 }

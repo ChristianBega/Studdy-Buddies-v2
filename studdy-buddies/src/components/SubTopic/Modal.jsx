@@ -18,11 +18,10 @@ const style = {
   p: 4,
 };
 
-export default function ModalComponent() {
+export default function ModalComponent({ isHovered }) {
   const [formType, setFormType] = React.useState("");
   const [open, setOpen] = React.useState(false);
   const handleOpen = (e) => {
-    // console.log(e.target.parentElement.parentElement.id);
     setOpen(true);
     setFormType(e.target.parentElement.parentElement.id);
   };
@@ -33,17 +32,21 @@ export default function ModalComponent() {
 
   return (
     <>
-      <Button onClick={handleOpen}>
-        <AddIcon />
-      </Button>
-      <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Add Something here ...
-          </Typography>
-          <SubtopicsForm formType={formType} />
-        </Box>
-      </Modal>
+      {isHovered ? (
+        <>
+          <Button onClick={handleOpen}>
+            <AddIcon />
+          </Button>{" "}
+          <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+            <Box sx={style}>
+              <Typography id="modal-modal-title" variant="h6" component="h2">
+                Add Something here ...
+              </Typography>
+              <SubtopicsForm formType={formType} />
+            </Box>
+          </Modal>
+        </>
+      ) : null}
     </>
   );
 }

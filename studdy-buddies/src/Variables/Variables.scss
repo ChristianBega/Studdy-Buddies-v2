@@ -237,6 +237,9 @@ $inputField-grey: #a6afb44d;
       transform: translate(-50%, -50%);
 }
 
+@mixin onHoverOverLay {
+  cursor: pointer;
+}
 
 
 

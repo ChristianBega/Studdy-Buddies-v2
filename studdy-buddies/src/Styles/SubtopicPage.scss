@@ -3,17 +3,18 @@
 .subtopicSection {
   @include subtopicSection;
   gap: 2rem;
-  // color: $primary-light;
-  color: #000;
+  color: $primary-light;
 
   :nth-child(1) {
     text-align: center;
     margin-block: 1rem;
   }
   .subtopicBox {
+    position: relative;
     @include subtopicBox;
   }
   .subtopicDescription {
+    min-height: 100px;
     Button {
       @include modalButton;
     }
@@ -40,12 +41,12 @@
     }
 
     // Title
-    :nth-child(3) {
+    :nth-child(2) {
       padding: 0.5rem 1rem;
       min-height: 85px;
     }
     // Description
-    :nth-child(4) {
+    :nth-child(3) {
       color: $secondary-dark;
       padding: 1rem;
       background-color: $primary-grey;
