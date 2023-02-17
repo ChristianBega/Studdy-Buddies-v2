@@ -28,34 +28,27 @@ const resourceMockData = [
 ];
 
 export default function Resources() {
-  const [isHovered, setIsHovered] = useState(false);
-  const [resource, setResource] = React.useState();
+  const [resource, setResource] = useState();
   const handleChange = (event) => {
     setResource(event.target.value);
   };
 
   return (
-    <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} id="resources" className="subtopicBox subtopicResources">
-      {isHovered ? (
-        <ModalComponent isHovered={isHovered} />
-      ) : (
-        <>
-          {" "}
-          <h3>Resources</h3>
-          <FormControl variant="standard">
-            <InputLabel id="resource">{resource || "Resources"}</InputLabel>
-            <Select labelId="resources" id="demo-simple-select-standard" onChange={handleChange}>
-              {resourceMockData.map((resource) => (
-                <MenuItem value={resource.resourceName}>
-                  <a key={resource.resourceName} href={resource.resourceLink} target="_blank" rel="noopener noreferrer">
-                    {resource.resourceName}
-                  </a>
-                </MenuItem>
-              ))}
-            </Select>
-          </FormControl>
-        </>
-      )}
+    <div id="resources" className="subtopicBox subtopicResources">
+      <ModalComponent  />
+      <h3>Resources</h3>
+      <FormControl variant="standard">
+        <InputLabel id="resource">{resource || "Resources"}</InputLabel>
+        <Select value="" labelId="resources" id="demo-simple-select-standard" onChange={handleChange}>
+          {resourceMockData.map((resource) => (
+            <MenuItem key={resource.id} value={resource.resourceName || ""}>
+              <a href={resource.resourceLink} target="_blank" rel="noopener noreferrer">
+                {resource.resourceName}
+              </a>
+            </MenuItem>
+          ))}
+        </Select>
+      </FormControl>
     </div>
   );
 }

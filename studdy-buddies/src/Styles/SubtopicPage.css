@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  color: #ffffff;
+  color: #333333;
 }
 .subtopicSection :nth-child(1) {
   text-align: center;
@@ -16,7 +16,7 @@
   padding: 1rem;
   min-height: 50px;
   width: 100%;
-  background-color: rgba(20, 18, 31, 0.8);
+  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(3.3px);
@@ -31,8 +31,8 @@
   height: 2.5rem;
   min-width: 2.5rem;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  top: 25px;
+  right: -10px;
   transform: translate(-50%, -50%);
 }
 .subtopicSection .subtopicCodeDemo {
@@ -45,8 +45,8 @@
   height: 2.5rem;
   min-width: 2.5rem;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  top: 25px;
+  right: -10px;
   transform: translate(-50%, -50%);
 }
 .subtopicSection .subtopicGist {
@@ -62,8 +62,8 @@
   height: 2.5rem;
   min-width: 2.5rem;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  top: 25px;
+  right: -10px;
   transform: translate(-50%, -50%);
 }
 .subtopicSection .subtopicGist :nth-child(2) {
@@ -80,6 +80,16 @@
 .subtopicSection .subtopicResources {
   display: flex;
   flex-direction: column;
+}
+.subtopicSection .subtopicResources Button {
+  padding: 0;
+  margin: 0;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  position: absolute;
+  top: 25px;
+  right: -10px;
+  transform: translate(-50%, -50%);
 }
 .subtopicSection .subtopicResources :nth-child(2) {
   min-width: 180px;

@@ -219,7 +219,7 @@ $inputField-grey: #a6afb44d;
   padding: 1rem;
   min-height: 50px;
   width: 100%;
-  background-color: $secondary-dark;
+  background-color: $primary-light;
   border-radius: 8px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(3.3px);
@@ -232,8 +232,9 @@ $inputField-grey: #a6afb44d;
       height: 2.5rem;
       min-width: 2.5rem;
       position: absolute;
-      left: 50%;
-      top: 50%;
+      top: 25px;
+      // right: 25px;
+      right : -10px;
       transform: translate(-50%, -50%);
 }
 
