@@ -30,6 +30,7 @@ a {
 }
 
 .modalForm {
+  max-width: 300px;
   .textFields input {
     @include inputField;
   }

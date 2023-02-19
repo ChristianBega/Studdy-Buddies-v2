@@ -90,6 +90,7 @@
   background-color: #e7e7e7;
   display: block;
   min-height: 200px;
+  padding: 1rem;
 }
 .subtopicSection .subtopicResources {
   display: flex;

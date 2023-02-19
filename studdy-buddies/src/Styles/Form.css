@@ -37,7 +37,8 @@ a:hover {
 .form .textFields input {
   background-color: rgba(80, 83, 148, 0.3019607843);
   color: #f1f1f1;
-  min-width: 350px;
+  min-width: 250px;
+  max-width: 350px;
   max-width: 80%;
   height: 2rem;
   outline: none;
@@ -69,10 +70,14 @@ a:hover {
   color: #a7c6f1;
 }
 
+.modalForm {
+  max-width: 300px;
+}
 .modalForm .textFields input {
   background-color: rgba(80, 83, 148, 0.3019607843);
   color: #f1f1f1;
-  min-width: 350px;
+  min-width: 250px;
+  max-width: 350px;
   max-width: 80%;
   height: 2rem;
   outline: none;

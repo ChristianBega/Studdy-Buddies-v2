@@ -41,7 +41,9 @@ $inputField-grey: #5053944d;
 @mixin inputField {
   background-color: $inputField-grey;
   color: $primary-light;
-  min-width: 350px;
+  min-width: 250px;
+
+  max-width: 350px;
   max-width: 80%;
   height: 2rem;
   outline: none;
