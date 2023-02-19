@@ -35,12 +35,15 @@
 .subtopicSection .subtopicDescription Button {
   padding: 0;
   margin: 0;
-  height: 2.5rem;
-  min-width: 2.5rem;
   position: absolute;
-  top: 25px;
+  top: 30px;
   right: -10px;
   transform: translate(-50%, -50%);
+  background-color: #a7c6f1;
+}
+.subtopicSection .subtopicDescription Button:hover {
+  cursor: pointer;
+  background-color: rgba(167, 198, 241, 0.7);
 }
 .subtopicSection .subtopicCodeDemo {
   min-height: 200px;
@@ -49,12 +52,15 @@
 .subtopicSection .subtopicCodeDemo Button {
   padding: 0;
   margin: 0;
-  height: 2.5rem;
-  min-width: 2.5rem;
   position: absolute;
-  top: 25px;
+  top: 30px;
   right: -10px;
   transform: translate(-50%, -50%);
+  background-color: #a7c6f1;
+}
+.subtopicSection .subtopicCodeDemo Button:hover {
+  cursor: pointer;
+  background-color: rgba(167, 198, 241, 0.7);
 }
 .subtopicSection .subtopicGist {
   min-height: 400px;
@@ -66,12 +72,15 @@
 .subtopicSection .subtopicGist Button {
   padding: 0;
   margin: 0;
-  height: 2.5rem;
-  min-width: 2.5rem;
   position: absolute;
-  top: 25px;
+  top: 30px;
   right: -10px;
   transform: translate(-50%, -50%);
+  background-color: #a7c6f1;
+}
+.subtopicSection .subtopicGist Button:hover {
+  cursor: pointer;
+  background-color: rgba(167, 198, 241, 0.7);
 }
 .subtopicSection .subtopicGist :nth-child(2) {
   min-height: 85px;
@@ -89,14 +98,13 @@
 .subtopicSection .subtopicResources Button {
   padding: 0;
   margin: 0;
-  height: 2.5rem;
-  min-width: 2.5rem;
   position: absolute;
-  top: 25px;
+  top: 30px;
   right: -10px;
   transform: translate(-50%, -50%);
+  background-color: #a7c6f1;
 }
-.subtopicSection .subtopicResources :nth-child(2) {
-  min-width: 180px;
-  margin-top: 0;
+.subtopicSection .subtopicResources Button:hover {
+  cursor: pointer;
+  background-color: rgba(167, 198, 241, 0.7);
 }/*# sourceMappingURL=SubtopicPage.css.map */

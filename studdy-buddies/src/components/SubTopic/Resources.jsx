@@ -48,8 +48,8 @@ export default function Resources() {
         <InputLabel id="resource">{resource ? resource : "Resources"}</InputLabel>
         <Select value="" labelId="resources" id="demo-simple-select-standard" onChange={handleChange}>
           {resourceMockData.map((resource, index) => (
-            <MenuItem key={index + 1} value={resource ? resource.resourceTitle : "Resources"}>
-              <a href={resource.resourceLink} target="_blank" rel="noopener noreferrer">
+            <MenuItem sx={{ color: "red !important" }} key={index + 1} value={resource ? resource.resourceTitle : "Resources"}>
+              <a className="test" href={resource.resourceLink} target="_blank" rel="noopener noreferrer">
                 {resource.resourceTitle}
               </a>
             </MenuItem>

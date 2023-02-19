@@ -10,7 +10,6 @@ export default function Description() {
     <div id="description" className="subtopicBox subtopicDescription">
       <ModalComponent setUserInput={setUserInput} />
       <h3>Description</h3>
-
       <p>{userInput}</p>
     </div>
   );

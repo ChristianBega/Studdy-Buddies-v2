@@ -11,6 +11,8 @@ $secondary-black: rgba(27, 27, 30, 0.8);
 
 $accent-mint: #abebb9;
 $accent-blue: #a7c6f1;
+$accent-blue-light: rgba(167, 198, 241, .7);
+
 $accent-orange: #f5d0a8;
 $inputField-grey: #a6afb44d;
 
@@ -231,13 +233,16 @@ $inputField-grey: #a6afb44d;
 @mixin modalButton {
       padding: 0;
       margin: 0;
-      height: 2.5rem;
-      min-width: 2.5rem;
       position: absolute;
-      top: 25px;
-      // right: 25px;
+      top: 30px;
       right : -10px;
       transform: translate(-50%, -50%);
+    background-color : $accent-blue;
+    &:hover {
+    cursor: pointer;
+    // transform: scale(1.1);
+    background-color: $accent-blue-light;
+  }
 }
 
 @mixin onHoverOverLay {

@@ -4,6 +4,7 @@
   @include subtopicSection;
   gap: 2rem;
   color: #333333;
+
   h1 {
     text-align: center;
   }
@@ -62,10 +63,6 @@
     flex-direction: column;
     Button {
       @include modalButton;
-    }
-    :nth-child(2) {
-      min-width: 180px;
-      margin-top: 0;
     }
   }
 }
