@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { InputUnstyled } from "@mui/base";
-import "../../Styles/Form.css";
+import Typography from "@mui/material/Typography";
 
 export default function SubtopicsForm({ formType, setUserInput }) {
   const [formState, setFormState] = useState("");
@@ -20,24 +20,79 @@ export default function SubtopicsForm({ formType, setUserInput }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="modalForm" onSubmit={handleSubmit}>
       {formType === "description" ? (
-        <InputUnstyled onChange={handleChange} name="description" className="textFields" type="text" placeholder="Enter description here..." />
+        <>
+          <Typography mb={4} id="modal-modal-title" variant="h4" component="h2">
+            Add a description
+          </Typography>
+          <InputUnstyled onChange={handleChange} name="description" className="textFields" type="text" placeholder="Enter description here..." />
+        </>
       ) : formType === "codeDemo" ? (
-        <InputUnstyled onChange={handleChange} name="codeDemo" className="textFields" type="text" placeholder="Enter code demo here..." />
+        <>
+          <Typography mb={4} id="modal-modal-title" variant="h4" component="h2">
+            Add a code demo
+          </Typography>
+          <InputUnstyled onChange={handleChange} name="codeDemo" className="textFields" type="text" placeholder="Enter code demo here..." />
+        </>
       ) : formType === "gist" ? (
         <>
-          <InputUnstyled onChange={handleChange} name="title" className="textFields" type="text" placeholder="Enter gist title here..." />
-          <InputUnstyled onChange={handleChange} name="description" className="textFields" type="text" placeholder="Enter gist here..." />
-          <InputUnstyled onChange={handleChange} name="gist" className="textFields" type="text" placeholder="Enter gist here..." />
+          <Typography mb={4} id="modal-modal-title" variant="h4" component="h2">
+            Add a gist
+          </Typography>
+          <InputUnstyled
+            style={{ marginTop: "1rem" }}
+            onChange={handleChange}
+            name="title"
+            className="textFields"
+            type="text"
+            placeholder="Enter gist title here..."
+          />
+          <InputUnstyled
+            style={{ marginTop: "1rem" }}
+            onChange={handleChange}
+            name="description"
+            className="textFields"
+            type="text"
+            placeholder="Enter gist here..."
+          />
+          <InputUnstyled
+            style={{ marginTop: "1rem" }}
+            onChange={handleChange}
+            name="gist"
+            className="textFields"
+            type="text"
+            placeholder="Enter gist here..."
+          />
         </>
       ) : formType === "resources" ? (
         <>
-          <InputUnstyled onChange={handleChange} name="resourceTitle" className="textFields" type="text" placeholder="Enter your resources title..." />
-          <InputUnstyled onChange={handleChange} name="resourceLink" className="textFields" type="text" placeholder="Enter your resources link..." />
+          <Typography mb={4} id="modal-modal-title" variant="h4" component="h2">
+            Add a resource
+          </Typography>
+          <InputUnstyled
+            style={{ marginTop: "1rem" }}
+            onChange={handleChange}
+            name="resourceTitle"
+            className="textFields"
+            type="text"
+            placeholder="Enter your resources title..."
+          />
+
+          <InputUnstyled
+            style={{ marginTop: "1rem" }}
+            onChange={handleChange}
+            name="resourceLink"
+            className="textFields"
+            type="text"
+            placeholder="Enter your resources link..."
+          />
+          <p style={{ marginTop: "1rem" }}>Working, just need to figure out how to add new user inputs to resources select drop down</p>
         </>
       ) : null}
-      <button>Submit</button>
+      <div style={{ textAlign: "center", marginTop: "1rem" }}>
+        <button>Submit</button>
+      </div>
     </form>
   );
 }
