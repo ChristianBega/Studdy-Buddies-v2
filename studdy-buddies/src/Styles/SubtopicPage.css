@@ -7,16 +7,23 @@
   gap: 2rem;
   color: #333333;
 }
-.subtopicSection :nth-child(1) {
+.subtopicSection h1 {
   text-align: center;
+}
+.subtopicSection h1,
+.subtopicSection h3 {
+  color: var(--secondary-black);
+  margin-bottom: 1rem;
+}
+.subtopicSection :nth-child(1) {
   margin-block: 1rem;
 }
 .subtopicSection .subtopicBox {
   position: relative;
   padding: 1rem;
-  min-height: 50px;
+  min-height: 65px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   border-radius: 8px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(3.3px);
@@ -67,13 +74,11 @@
   transform: translate(-50%, -50%);
 }
 .subtopicSection .subtopicGist :nth-child(2) {
-  padding: 0.5rem 1rem;
   min-height: 85px;
 }
 .subtopicSection .subtopicGist :nth-child(3) {
   color: rgba(20, 18, 31, 0.8);
-  padding: 1rem;
-  background-color: #dcdcdc;
+  background-color: #e7e7e7;
   display: block;
   min-height: 200px;
 }
@@ -93,4 +98,5 @@
 }
 .subtopicSection .subtopicResources :nth-child(2) {
   min-width: 180px;
+  margin-top: 0;
 }/*# sourceMappingURL=SubtopicPage.css.map */

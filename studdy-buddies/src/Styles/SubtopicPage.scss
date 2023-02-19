@@ -4,9 +4,15 @@
   @include subtopicSection;
   gap: 2rem;
   color: #333333;
-
-  :nth-child(1) {
+  h1 {
     text-align: center;
+  }
+  h1,
+  h3 {
+    color: var(--secondary-black);
+    margin-bottom: 1rem;
+  }
+  :nth-child(1) {
     margin-block: 1rem;
   }
   .subtopicBox {
@@ -34,7 +40,6 @@
     // Heading 3
     :nth-child(1) {
       margin-bottom: 1rem;
-      // padding: 1rem;
     }
     Button {
       @include modalButton;
@@ -42,13 +47,11 @@
 
     // Title
     :nth-child(2) {
-      padding: 0.5rem 1rem;
       min-height: 85px;
     }
     // Description
     :nth-child(3) {
       color: $secondary-dark;
-      padding: 1rem;
       background-color: $primary-grey;
       display: block;
       min-height: 200px;
@@ -57,14 +60,12 @@
   .subtopicResources {
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
-    // background-color: red;
     Button {
       @include modalButton;
     }
     :nth-child(2) {
-      // background-color: red;
       min-width: 180px;
+      margin-top: 0;
     }
   }
 }

@@ -5,11 +5,11 @@ body {
 h1 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 45px;
-  color: #dcdcdc;
+  color: #e7e7e7;
 }
 
 a {
-  color: #dcdcdc;
+  color: #e7e7e7;
 }
 a:hover {
   cursor: pointer;
@@ -36,7 +36,7 @@ a:hover {
 }
 .form .textFields input {
   background-color: rgba(166, 175, 180, 0.3019607843);
-  color: #ffffff;
+  color: #f1f1f1;
   min-width: 350px;
   max-width: 80%;
   height: 2rem;
@@ -46,10 +46,10 @@ a:hover {
   padding: 1.6rem 0.8rem;
 }
 .form .textFields input::-moz-placeholder {
-  color: #ffffff;
+  color: #f1f1f1;
 }
 .form .textFields input::placeholder {
-  color: #ffffff;
+  color: #f1f1f1;
 }
 .form .inputContainers {
   display: flex;
@@ -71,7 +71,7 @@ a:hover {
 
 .modalForm .textFields input {
   background-color: rgba(166, 175, 180, 0.3019607843);
-  color: #ffffff;
+  color: #f1f1f1;
   min-width: 350px;
   max-width: 80%;
   height: 2rem;
@@ -81,8 +81,8 @@ a:hover {
   padding: 1.6rem 0.8rem;
 }
 .modalForm .textFields input::-moz-placeholder {
-  color: #ffffff;
+  color: #f1f1f1;
 }
 .modalForm .textFields input::placeholder {
-  color: #ffffff;
+  color: #f1f1f1;
 }/*# sourceMappingURL=Form.css.map */

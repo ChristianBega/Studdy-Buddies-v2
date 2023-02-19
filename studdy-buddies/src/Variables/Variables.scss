@@ -2,10 +2,12 @@
 $header-font: "Source Sans Pro", sans-serif;
 $text-font: "Montserrat", sans-serif;
 // Colors
-$primary-light: #ffffff;
-$primary-grey: #dcdcdc;
+$primary-light: #f1f1f1;
+$primary-grey: #e7e7e7;
 
 $secondary-dark: rgba(20, 18, 31, 0.8);
+$secondary-black: rgba(27, 27, 30, 0.8);
+
 
 $accent-mint: #abebb9;
 $accent-blue: #a7c6f1;
@@ -217,7 +219,7 @@ $inputField-grey: #a6afb44d;
 }
 @mixin subtopicBox {
   padding: 1rem;
-  min-height: 50px;
+  min-height: 65px;
   width: 100%;
   background-color: $primary-light;
   border-radius: 8px;
