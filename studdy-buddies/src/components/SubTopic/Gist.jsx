@@ -9,12 +9,10 @@ export default function Gist() {
   return (
     <div id="gist" className="subtopicBox subtopicGist">
       <ModalComponent setUserInput={setUserInput} />
-      <div className="gistCard">
-        <h3>{userInput.title ? userInput.title : "Title"}</h3>
-        {/* <p>Title **Required</p> */}
-        <p>{userInput.description ? userInput.description : "Enter a description here ..."}</p>
-        <code>{userInput.gist ? userInput.gist : "Enter a code demo here..."}</code>
-      </div>
+      <h3>{userInput.title ? userInput.title : "Title"}</h3>
+      {/* <p>Title **Required</p> */}
+      <p>{userInput.description ? userInput.description : "Enter a description here ..."}</p>
+      <code>{userInput.gist ? userInput.gist : "Enter a code demo here..."}</code>
     </div>
   );
 }

@@ -2,7 +2,7 @@
 
 .subtopicSection {
   @include subtopicSection;
-  gap: 2rem;
+  // gap: 2rem;
   color: #333333;
 
   h1 {
@@ -16,8 +16,9 @@
   :nth-child(1) {
     margin-block: 1rem;
   }
+
+  
   .subtopicBox {
-    position: relative;
     @include subtopicBox;
   }
   .subtopicDescription {
@@ -29,14 +30,12 @@
 
   .subtopicCodeDemo {
     min-height: 200px;
-    position: relative;
     Button {
       @include modalButton;
     }
   }
   .subtopicGist {
     min-height: 400px;
-    position: relative;
 
     // Heading 3
     :nth-child(1) {
@@ -62,6 +61,7 @@
   .subtopicResources {
     display: flex;
     flex-direction: column;
+    width: 100%;
     Button {
       @include modalButton;
     }

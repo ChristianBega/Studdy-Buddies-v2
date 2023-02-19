@@ -41,7 +41,7 @@ export default function Resources() {
   // When a new userInput is submitted I want to take that input and update the resourceMockData and rerender a new menuItem
 
   return (
-    <div id="resources" className="subtopicBox subtopicResources">
+    <div  id="resources" className="subtopicBox subtopicResources">
       <ModalComponent setUserInput={setUserInput} />
       <h3>Resources</h3>
       <FormControl variant="standard">
