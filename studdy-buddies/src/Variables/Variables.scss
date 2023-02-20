@@ -324,7 +324,7 @@ $inputField-grey: #a6afb44d;
 
 // Dashboard Mixins
 @mixin PageContainer {
-  height: 140vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -332,6 +332,7 @@ $inputField-grey: #a6afb44d;
 }
 
 @mixin QuoteBox {
+  margin: 10px;
   color: $font-color;
   padding: 10px;
   line-height: 1.5;
@@ -345,6 +346,7 @@ $inputField-grey: #a6afb44d;
 }
 
 @mixin CalendarBox {
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -356,6 +358,7 @@ $inputField-grey: #a6afb44d;
 }
 
 @mixin CardBox {
+  margin: 10px;
   padding: 20px;
   text-align: center;
   width: 90vw;
@@ -387,7 +390,7 @@ $inputField-grey: #a6afb44d;
   justify-content: center;
   align-items: center;
   background-color: #E2D1F9;
-  height: 170px;
+  height: 200px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -401,4 +404,17 @@ $inputField-grey: #a6afb44d;
   background-color: $accent-blue;
   border: $accent-blue;
   border-radius: 7px;
+}
+
+@mixin FriendFeed {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: $primary-light;
+  color: $font-color;
+  border-radius: 10px;
+  width: 90vw;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
 }

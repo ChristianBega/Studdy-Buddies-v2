@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import QuoteContainer from "../components/DashBoard/Quote";
 import ToDoList from "../components/DashBoard/ToDoList";
 import Card from "../components/DashBoard/Card";
+import FriendFeed from "../components/DashBoard/FriendFeed";
 
 export default function DashboardPage() {
   return (
@@ -12,6 +13,7 @@ export default function DashboardPage() {
       <QuoteContainer />
       <ToDoList />
       <Card />
+      <FriendFeed />
       </div>
     </>
   );
