@@ -324,7 +324,7 @@ $inputField-grey: #a6afb44d;
 
 // Dashboard Mixins
 @mixin PageContainer {
-  height: 120vh;
+  height: 140vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -345,6 +345,10 @@ $inputField-grey: #a6afb44d;
 }
 
 @mixin CalendarBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
   background-color: $primary-light;
   border-radius: 10px;
   width: 90vw;

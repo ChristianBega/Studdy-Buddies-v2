@@ -13,6 +13,11 @@ body {
     
     .calendarContainer {
         @include CalendarBox;
+
+        .todoText {
+            text-align: center;
+            width: 90%;
+        }
     }
 
     .topicContainer {

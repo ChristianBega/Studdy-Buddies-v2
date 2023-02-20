@@ -3,7 +3,7 @@ body {
 }
 
 .pageContainer {
-  height: 120vh;
+  height: 140vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -24,10 +24,18 @@ body {
   box-shadow: 0 4px 30px rgb(0, 0, 0);
 }
 .pageContainer .calendarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
   background-color: #ffffff;
   border-radius: 10px;
   width: 90vw;
   box-shadow: 0 4px 30px rgb(0, 0, 0);
+}
+.pageContainer .calendarContainer .todoText {
+  text-align: center;
+  width: 90%;
 }
 .pageContainer .topicContainer {
   padding: 20px;
