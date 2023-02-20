@@ -1,5 +1,5 @@
 body {
-  background-color: #dcdcdc;
+  background-color: #e7e7e7;
 }
 
 .pageContainer {
@@ -32,12 +32,12 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   font-family: "Montserrat", sans-serif;
   color: #0d0d0d;
 }
 .pageContainer .outerContainer {
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   font-family: "Montserrat", sans-serif;
   color: #0d0d0d;
   height: 200px;

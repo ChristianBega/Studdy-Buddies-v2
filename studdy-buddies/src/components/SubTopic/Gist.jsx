@@ -1,19 +1,18 @@
 import ModalComponent from "./Modal";
 
-import React from "react";
+import React, { useState } from "react";
 
 export default function Gist() {
   // Acts as a readme file generator - user can type in a "gist" and then they are able to print out a readme
+  const [userInput, setUserInput] = useState("");
+  // console.log(userInput);
   return (
-    <div className="subtopicBox subtopicGist">
-      <div id="gist" className="gistCard">
-        <h3>Title **Required</h3>
-        <ModalComponent />
-
-        {/* <p>Title **Required</p> */}
-        <p>Description/Summary **Required</p>
-        <code>Code examples here... **Required</code>
-      </div>
+    <div id="gist" className="subtopicBox subtopicGist">
+      <ModalComponent setUserInput={setUserInput} />
+      <h3>{userInput.title ? userInput.title : "Title"}</h3>
+      {/* <p>Title **Required</p> */}
+      <p>{userInput.description ? userInput.description : "Enter a description here ..."}</p>
+      <code>{userInput.gist ? userInput.gist : "Enter a code demo here..."}</code>
     </div>
   );
 }
