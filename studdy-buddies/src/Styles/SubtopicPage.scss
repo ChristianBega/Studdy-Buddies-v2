@@ -2,6 +2,8 @@
 
 .subtopicSection {
   @include subtopicSection;
+  max-width: 1280px;
+  margin: auto;
   // gap: 2rem;
   color: #333333;
 
@@ -17,9 +19,9 @@
     margin-block: 1rem;
   }
 
-  
   .subtopicBox {
     @include subtopicBox;
+    min-width: 100%;
   }
   .subtopicDescription {
     min-height: 100px;
@@ -29,7 +31,7 @@
   }
 
   .subtopicCodeDemo {
-    min-height: 200px;
+    min-height: 400px;
     Button {
       @include modalButton;
     }
@@ -37,20 +39,23 @@
   .subtopicGist {
     min-height: 400px;
 
-    // Heading 3
-    :nth-child(1) {
-      margin-bottom: 1rem;
-    }
+    // // Heading 3
+    // :nth-child(1) {
+    // }
+    //   margin-bottom: 1rem;
     Button {
       @include modalButton;
     }
 
     // Title
     :nth-child(2) {
-      min-height: 85px;
+      margin-bottom: 2rem;
     }
-    // Gist Box
     :nth-child(3) {
+      min-height: 65px;
+    }
+    // Gist
+    :nth-child(4) {
       color: $secondary-dark;
       background-color: $primary-grey;
       display: block;

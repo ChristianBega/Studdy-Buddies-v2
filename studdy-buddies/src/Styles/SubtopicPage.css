@@ -2,6 +2,8 @@
   padding: 2rem 1rem;
   min-height: 95vh;
   width: 100%;
+  max-width: 1280px;
+  margin: auto;
   color: #333333;
 }
 .subtopicSection h1 {
@@ -24,6 +26,7 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(3.3px);
   -webkit-backdrop-filter: blur(3.3px);
+  min-width: 100%;
 }
 .subtopicSection .subtopicDescription {
   min-height: 100px;
@@ -42,7 +45,7 @@
   background-color: rgba(167, 198, 241, 0.7);
 }
 .subtopicSection .subtopicCodeDemo {
-  min-height: 200px;
+  min-height: 400px;
 }
 .subtopicSection .subtopicCodeDemo Button {
   padding: 0;
@@ -60,9 +63,6 @@
 .subtopicSection .subtopicGist {
   min-height: 400px;
 }
-.subtopicSection .subtopicGist :nth-child(1) {
-  margin-bottom: 1rem;
-}
 .subtopicSection .subtopicGist Button {
   padding: 0;
   margin: 0;
@@ -77,9 +77,12 @@
   background-color: rgba(167, 198, 241, 0.7);
 }
 .subtopicSection .subtopicGist :nth-child(2) {
-  min-height: 85px;
+  margin-bottom: 2rem;
 }
 .subtopicSection .subtopicGist :nth-child(3) {
+  min-height: 65px;
+}
+.subtopicSection .subtopicGist :nth-child(4) {
   color: rgba(20, 18, 31, 0.8);
   background-color: #e7e7e7;
   display: block;
