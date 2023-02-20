@@ -1,5 +1,5 @@
-import NextButton from "../Buttons/NextButton";
-import BackButton from "../Buttons/BackButton";
+import NextButton from "../Buttons/EditButton";
+import BackButton from "../Buttons/DeleteButton";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
