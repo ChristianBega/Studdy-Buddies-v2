@@ -1,0 +1,28 @@
+{
+  "name": "studdy-buddies-v2",
+  "version": "1.0.0",
+  "description": "For this project a team of five developers were tasked with building a full stack application. We decide that as developers we spend too\r much time searching for resource or code snippets. So our solution, was to build a application that can act as a single reference point to\r all things coding. We utilized Node.js, Express.js, Sql, and Sequlize to build out our backend. As well as Jquery, Jquery UI, Bootstrap\r and Handlebars to handle the front end.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd studdy-buddies && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristianBega/Studdy-Buddies-v2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristianBega/Studdy-Buddies-v2/issues"
+  },
+  "homepage": "https://github.com/ChristianBega/Studdy-Buddies-v2#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
