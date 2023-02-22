@@ -2,7 +2,7 @@ const Categories = require("./Categories");
 const Topics = require("./Topics");
 const Subtopics = require("./Subtopics");
 const SubtopicStatus = require("./subtopicStatus");
-const Users = require("./User");
+const Users = require("./Users");
 
 // Categories has many Topics via the 'category_id' foreign key.
 Categories.hasMany(Topics, {
