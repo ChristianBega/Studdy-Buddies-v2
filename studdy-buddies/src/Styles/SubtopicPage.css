@@ -1,0 +1,109 @@
+.subtopicSection {
+  padding: 2rem 1rem;
+  min-height: 95vh;
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  color: #333333;
+}
+.subtopicSection h1 {
+  text-align: center;
+}
+.subtopicSection h1,
+.subtopicSection h3 {
+  color: var(--secondary-black);
+  margin-bottom: 1rem;
+}
+.subtopicSection :nth-child(1) {
+  margin-block: 1rem;
+}
+.subtopicSection .subtopicBox {
+  padding: 1rem;
+  min-height: 65px;
+  min-width: 300px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  min-width: 100%;
+}
+.subtopicSection .subtopicDescription {
+  min-height: 100px;
+}
+.subtopicSection .subtopicDescription Button {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  transform: translate(-50%, -50%);
+  background-color: #a7c6f1;
+}
+.subtopicSection .subtopicDescription Button:hover {
+  cursor: pointer;
+  background-color: rgba(167, 198, 241, 0.7);
+}
+.subtopicSection .subtopicCodeDemo {
+  min-height: 400px;
+}
+.subtopicSection .subtopicCodeDemo Button {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  transform: translate(-50%, -50%);
+  background-color: #a7c6f1;
+}
+.subtopicSection .subtopicCodeDemo Button:hover {
+  cursor: pointer;
+  background-color: rgba(167, 198, 241, 0.7);
+}
+.subtopicSection .subtopicGist {
+  min-height: 400px;
+}
+.subtopicSection .subtopicGist Button {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  transform: translate(-50%, -50%);
+  background-color: #a7c6f1;
+}
+.subtopicSection .subtopicGist Button:hover {
+  cursor: pointer;
+  background-color: rgba(167, 198, 241, 0.7);
+}
+.subtopicSection .subtopicGist :nth-child(2) {
+  margin-bottom: 2rem;
+}
+.subtopicSection .subtopicGist :nth-child(3) {
+  min-height: 65px;
+}
+.subtopicSection .subtopicGist :nth-child(4) {
+  color: rgba(20, 18, 31, 0.8);
+  background-color: #e7e7e7;
+  display: block;
+  min-height: 200px;
+  padding: 1rem;
+}
+.subtopicSection .subtopicResources {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.subtopicSection .subtopicResources Button {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  transform: translate(-50%, -50%);
+  background-color: #a7c6f1;
+}
+.subtopicSection .subtopicResources Button:hover {
+  cursor: pointer;
+  background-color: rgba(167, 198, 241, 0.7);
+}/*# sourceMappingURL=SubtopicPage.css.map */

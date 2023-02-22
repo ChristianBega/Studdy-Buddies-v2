@@ -1,0 +1,74 @@
+@import "../Variables/Variables.scss";
+
+.subtopicSection {
+  @include subtopicSection;
+  max-width: 1280px;
+  margin: auto;
+  // gap: 2rem;
+  color: #333333;
+
+  h1 {
+    text-align: center;
+  }
+  h1,
+  h3 {
+    color: var(--secondary-black);
+    margin-bottom: 1rem;
+  }
+  :nth-child(1) {
+    margin-block: 1rem;
+  }
+
+  .subtopicBox {
+    @include subtopicBox;
+    min-width: 100%;
+  }
+  .subtopicDescription {
+    min-height: 100px;
+    Button {
+      @include modalButton;
+    }
+  }
+
+  .subtopicCodeDemo {
+    min-height: 400px;
+    Button {
+      @include modalButton;
+    }
+  }
+  .subtopicGist {
+    min-height: 400px;
+
+    // // Heading 3
+    // :nth-child(1) {
+    // }
+    //   margin-bottom: 1rem;
+    Button {
+      @include modalButton;
+    }
+
+    // Title
+    :nth-child(2) {
+      margin-bottom: 2rem;
+    }
+    :nth-child(3) {
+      min-height: 65px;
+    }
+    // Gist
+    :nth-child(4) {
+      color: $secondary-dark;
+      background-color: $primary-grey;
+      display: block;
+      min-height: 200px;
+      padding: 1rem;
+    }
+  }
+  .subtopicResources {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    Button {
+      @include modalButton;
+    }
+  }
+}

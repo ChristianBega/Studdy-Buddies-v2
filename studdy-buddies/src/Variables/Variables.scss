@@ -1,25 +1,28 @@
 // Typography & Sizes
 $header-font: "Source Sans Pro", sans-serif;
 $text-font: "Montserrat", sans-serif;
+$font-color: #726e6e;
 // Colors
-$primary-light: #ffffff;
-$primary-grey: #dcdcdc;
+$primary-light: #f1f1f1;
+$primary-grey: #e7e7e7;
 
-$secondary-dark: #14121f;
+$secondary-dark: rgba(20, 18, 31, 0.8);
+$secondary-black: rgba(27, 27, 30, 0.8);
+
 
 $accent-mint: #abebb9;
 $accent-blue: #a7c6f1;
+$accent-blue-light: rgba(167, 198, 241, .7);
+
 $accent-orange: #f5d0a8;
-$inputField-grey: #a6afb44d;
+$inputField-grey: #5053944d;
 
 // Spacing
-
 // Form mixins
-
 // Mobile first - will look horrible on desktop
 @mixin form {
   margin-inline: 2rem;
-  width: 100vw;
+  width: 100%;
   min-height: 90vh;
   display: flex;
   gap: 2rem;
@@ -27,7 +30,7 @@ $inputField-grey: #a6afb44d;
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem 1rem;
-  background: rgba(255, 254, 254, 0.3);
+  background: rgba(255, 254, 254, 0.5);
   // background: rgba(167, 198, 241, 0.3);
 
   border-radius: 16px;
@@ -36,11 +39,12 @@ $inputField-grey: #a6afb44d;
   -webkit-backdrop-filter: blur(3.3px);
   border: 1px solid rgba(254, 253, 255, 0.3);
 }
-
 @mixin inputField {
   background-color: $inputField-grey;
   color: $primary-light;
-  min-width: 350px;
+  min-width: 250px;
+
+  max-width: 350px;
   max-width: 80%;
   height: 2rem;
   outline: none;
@@ -66,14 +70,12 @@ $inputField-grey: #a6afb44d;
   border-radius: 8px;
   @include onHover();
 }
-
-@mixin section {
+@mixin formSection {
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
   align-items: center;
 }
-
 @mixin onHover {
   &:hover {
     cursor: pointer;
@@ -210,9 +212,44 @@ $inputField-grey: #a6afb44d;
 
 
 
+// Christian start 200 -
 
+@mixin subtopicSection {
+  padding: 2rem 1rem;
+  min-height: 95vh;
+  width: 100%;
+}
+@mixin subtopicBox {
+  padding: 1rem;
+  min-height: 65px;
+  min-width: 300px;
+  // max-width: 450px;
 
+  background-color: $primary-light;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+}
 
+@mixin modalButton {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 30px;
+      right : -10px;
+      transform: translate(-50%, -50%);
+    background-color : $accent-blue;
+    &:hover {
+    cursor: pointer;
+    // transform: scale(1.1);
+    background-color: $accent-blue-light;
+  }
+}
+
+@mixin onHoverOverLay {
+  cursor: pointer;
+}
 
 
 
@@ -299,7 +336,7 @@ $inputField-grey: #a6afb44d;
 
 // Dashboard Mixins
 @mixin PageContainer {
-  height: 120vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -307,23 +344,33 @@ $inputField-grey: #a6afb44d;
 }
 
 @mixin QuoteBox {
+  margin: 10px;
+  color: $font-color;
   padding: 10px;
   line-height: 1.5;
   text-align: center;
   width: 90vw;
   height: fit-content;
   border-radius: 10px;
-  background-color: $accent-blue;
+  background-color: $primary-light;
   font-family: $text-font;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
 }
 
 @mixin CalendarBox {
-  background-color: $accent-mint;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: $primary-light;
   border-radius: 10px;
   width: 90vw;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
 }
 
 @mixin CardBox {
+  margin: 10px;
   padding: 20px;
   text-align: center;
   width: 90vw;
@@ -331,24 +378,55 @@ $inputField-grey: #a6afb44d;
   border-radius: 10px;
   background-color: $primary-light;
   font-family: $text-font;
-  color: #0d0d0d;
+  color: $font-color;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
 @mixin OuterBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50px;
+  margin-bottom: 10px;
   background-color: $primary-light;
   font-family: $text-font;
-  color: #0d0d0d;
-  height: 200px;
-  border: 2px solid black;
-  border-radius: 10px;
+  color: $font-color;
+  background-color: $primary-grey;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 @mixin TopicBox {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $accent-orange;
-  height: 130px;
-  border-radius: 8px;
-  border-bottom: 2px solid black;
+  background-color: #E2D1F9;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@mixin StandardButton {
+  width: 70px;
+  height: 30px;
+  font-family: $text-font;
+  font-size: 110%;
+  color: $font-color;
+  background-color: $accent-blue;
+  border: $accent-blue;
+  border-radius: 7px;
+}
+
+@mixin FriendFeed {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: $primary-light;
+  color: $font-color;
+  border-radius: 10px;
+  width: 90vw;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
 }
