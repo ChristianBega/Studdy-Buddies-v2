@@ -12,26 +12,59 @@ body {
     }
     
     .calendarContainer {
-        @include CalendarBox
+        @include CalendarBox;
+
+        .todoText {
+            text-align: center;
+            width: 90%;
+        }
     }
 
     .topicContainer {
-        @include CardBox
-    }
+        @include CardBox;
+    
 
-        .outerContainer {
-        @include OuterBox
-    }
+            .outerContainer {
+                @include OuterBox
+        }
 
-    .innerContainer {
-        @include TopicBox;
+        .innerContainer {
+            @include TopicBox;
 
-        a {
-            font-family: $text-font;
-            text-decoration: none;
-            color: #0d0d0d;
+            a {
+                font-family: $text-font;
+                text-decoration: none;
+                color: $font-color;
+                font-size: 200%;
+                font-weight: bolder;
+            }
+        }
+
+        .standardButton {
+            @include StandardButton
+        }
+
+        .favoriteIcon {
             font-size: 200%;
-            font-weight: bolder;
+            color: $font-color;
+        }
+
+        .arrowContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .arrow {
+            font-size: 50px;
+        }
+    }
+
+    .friendFeed {
+        @include FriendFeed;
+
+        h2 {
+            margin: 10px;
         }
     }
 }

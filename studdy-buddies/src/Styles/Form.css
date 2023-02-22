@@ -49,6 +49,9 @@ a:hover {
 .form .textFields input::-moz-placeholder {
   color: #f1f1f1;
 }
+.form .textFields input:-ms-input-placeholder {
+  color: #ffffff;
+}
 .form .textFields input::placeholder {
   color: #f1f1f1;
 }
@@ -87,6 +90,9 @@ a:hover {
 }
 .modalForm .textFields input::-moz-placeholder {
   color: #f1f1f1;
+}
+.modalForm .textFields input:-ms-input-placeholder {
+  color: #ffffff;
 }
 .modalForm .textFields input::placeholder {
   color: #f1f1f1;

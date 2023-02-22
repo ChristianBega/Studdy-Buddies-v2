@@ -1,6 +1,7 @@
 // Typography & Sizes
 $header-font: "Source Sans Pro", sans-serif;
 $text-font: "Montserrat", sans-serif;
+$font-color: #726e6e;
 // Colors
 $primary-light: #f1f1f1;
 $primary-grey: #e7e7e7;
@@ -335,7 +336,7 @@ $inputField-grey: #5053944d;
 
 // Dashboard Mixins
 @mixin PageContainer {
-  height: 120vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -343,23 +344,33 @@ $inputField-grey: #5053944d;
 }
 
 @mixin QuoteBox {
+  margin: 10px;
+  color: $font-color;
   padding: 10px;
   line-height: 1.5;
   text-align: center;
   width: 90vw;
   height: fit-content;
   border-radius: 10px;
-  background-color: $accent-blue;
+  background-color: $primary-light;
   font-family: $text-font;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
 }
 
 @mixin CalendarBox {
-  background-color: $accent-mint;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: $primary-light;
   border-radius: 10px;
   width: 90vw;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
 }
 
 @mixin CardBox {
+  margin: 10px;
   padding: 20px;
   text-align: center;
   width: 90vw;
@@ -367,24 +378,55 @@ $inputField-grey: #5053944d;
   border-radius: 10px;
   background-color: $primary-light;
   font-family: $text-font;
-  color: #0d0d0d;
+  color: $font-color;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
 @mixin OuterBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50px;
+  margin-bottom: 10px;
   background-color: $primary-light;
   font-family: $text-font;
-  color: #0d0d0d;
-  height: 200px;
-  border: 2px solid black;
-  border-radius: 10px;
+  color: $font-color;
+  background-color: $primary-grey;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 @mixin TopicBox {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $accent-orange;
-  height: 130px;
-  border-radius: 8px;
-  border-bottom: 2px solid black;
+  background-color: #E2D1F9;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@mixin StandardButton {
+  width: 70px;
+  height: 30px;
+  font-family: $text-font;
+  font-size: 110%;
+  color: $font-color;
+  background-color: $accent-blue;
+  border: $accent-blue;
+  border-radius: 7px;
+}
+
+@mixin FriendFeed {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: $primary-light;
+  color: $font-color;
+  border-radius: 10px;
+  width: 90vw;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
 }
