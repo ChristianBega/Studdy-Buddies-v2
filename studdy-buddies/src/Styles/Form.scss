@@ -30,7 +30,15 @@ a {
 }
 
 .modalForm {
+  max-width: 300px;
   .textFields input {
     @include inputField;
+  }
+  button {
+    background-color: $accent-mint;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    margin: auto;
   }
 }

@@ -1,5 +1,5 @@
 body {
-  background-color: #dcdcdc;
+  background-color: #e7e7e7;
 }
 
 .pageContainer {
@@ -48,11 +48,12 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   font-family: "Montserrat", sans-serif;
   color: #726e6e;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
+
 .pageContainer .topicContainer .outerContainer {
   display: flex;
   flex-direction: row;
@@ -61,6 +62,9 @@ body {
   height: 50px;
   margin-bottom: 10px;
   background-color: #ffffff;
+  
+.pageContainer .outerContainer {
+  background-color: #f1f1f1;
   font-family: "Montserrat", sans-serif;
   color: #726e6e;
   background-color: #dcdcdc;
