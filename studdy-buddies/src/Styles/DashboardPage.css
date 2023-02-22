@@ -16,11 +16,10 @@ body {
   line-height: 1.5;
   text-align: center;
   width: 90vw;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   font-family: "Montserrat", sans-serif;
   box-shadow: 0 4px 30px rgb(0, 0, 0);
 }
@@ -30,7 +29,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 15px;
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   border-radius: 10px;
   width: 90vw;
   box-shadow: 0 4px 30px rgb(0, 0, 0);
@@ -44,7 +43,6 @@ body {
   padding: 20px;
   text-align: center;
   width: 90vw;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 10px;
@@ -53,7 +51,6 @@ body {
   color: #726e6e;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
-
 .pageContainer .topicContainer .outerContainer {
   display: flex;
   flex-direction: row;
@@ -61,13 +58,10 @@ body {
   justify-content: space-evenly;
   height: 50px;
   margin-bottom: 10px;
-  background-color: #ffffff;
-  
-.pageContainer .outerContainer {
   background-color: #f1f1f1;
   font-family: "Montserrat", sans-serif;
   color: #726e6e;
-  background-color: #dcdcdc;
+  background-color: #e7e7e7;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -115,7 +109,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 15px;
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   color: #726e6e;
   border-radius: 10px;
   width: 90vw;
